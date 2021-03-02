@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "AMehdiHeydari";
+
+    src: url("media/fonts/AMehdiHeydari/AMehdiHeydari.svg") format("svg"), /* Legacy iOS */
+    url("media/fonts/AMehdiHeydari/AMehdiHeydari.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("media/fonts/AMehdiHeydari/AMehdiHeydari.woff") format("woff"), /* Modern Browsers */
+    url("media/fonts/AMehdiHeydari/AMehdiHeydari.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+.usersList{
+    text-align: center;
+    font-weight: 600;
+    font-family: 'AMehdiHeydari';
+    font-size: larger;
+}
+*{box-sizing: border-box;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+*:focus{
+    outline: none;
+}
+a{text-decoration: none}
+html{height: 100%}
+body{
+    background-image: url("media/white-BG.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100% !important;
+    width: 100%;
+}
+.container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: baseline;
+}
+.botfooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* height: 100%; */
+    position: relative;
+}
+.center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.clothes{
+    width: 220px;
+    margin-top: 20px;
+
+}
+.uppertext
+{
+    font-family:-webkit-pictograph;
+    font-weight: bold;
+    position: absolute;
+    top: 150px;
+}
+.labels
+{
+    width: 70px;
+    display: inline-block;
+    text-align: end;
+}
+.labels label
+{
+    white-space: pre;
+    font-family: AMehdiHeydari;
+    font-weight: bold;
+}
+.forminputs
+{
+    height: 32px;
+    background-color: #c9c9c7ab;
+    border:none;
+    border-radius: 15px;
+    padding-right: 7px;
+}
+input[type="text"]
+{
+    margin-top: 7px;
+    padding-right: 7px;
+}
+.formcheck
+{
+    font-size: 12px;
+    white-space: pre;
+    font-family: AMehdiHeydari;
+    font-weight: bold;
+}
+.btmshape
+{
+    width:480px;
+    position: relative;
+}
+.btmdiv
+{
+    justify-content: center !important;
+    align-items: center;
+}
+label,option,select ,.txt
+{
+    font-family: AMehdiHeydari;
+    color: #a12327;
+    font-weight: bold;
+    white-space: pre;
+}
+.botbut
+{
+    position: absolute;
+    top: 10%;
+    background: white;
+    padding: 0px 40px 8px;
+    border-radius: 27px;
+
+}
+.posabs{
+    position:absolute;
+    background: white;
+    width: 170px;
+    height: 1px;
+    margin-top: 44px;}
+.posabsSignUp{
+    position:absolute;
+    background: white;
+    width: 170px;
+    height: 1px;
+    margin-top: 5px;}
+.txt2
+{
+    font-size: 11px;
+}
+.txt3
+{
+    white-space: pre;
+}
+.mfooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.resmenulist{display: none}
+.txtCenter{text-align: center;
+    color: #a12327;
+    font-family: AMehdiHeydari;}
+.hrstyle
+{
+    background: #a12327;
+    width: 100%;
+    height: 1px;
+}
+.selected
+{
+    font-weight: bold;
+}
+.deselected{
+    font-size: 20px !important;
+}
+.resmenu{display: none;}
+.SignUp_form_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.SignUp_form_container input{
+    height: 32px;
+}
+#area_code
+{
+    position: absolute;
+    color: white;
+    left: 0px;
+    font-size: 14px;
+    padding: 0px 13px 0px 7px;
+    top: 8px;
+    border-radius: 19px 0px 0px 19px;
+    background: white;
+    background: radial-gradient(48% 96% at right, transparent 50%, #a62027 51%);
+}
+#fileinput{
+    color: transparent;
+    width: 92px;
+    margin-bottom: 10px;
+}
+#fileinput::-webkit-file-upload-button
+{
+    visibility: hidden;
+}
+#fileinput:before
+{
+    content: "انتخاب عکس";
+    color: #85454e;
+    font-weight: bold;
+    font-family: AMehdiHeydari;
+    font-size: 16px;
+
+}
+.SignUp_form_container i
+{
+    color:#892c30;
+}
+@media only screen and (max-width: 800px){
+    .mfooter
+    {
+        display: none !important;
+    }
+    .resmenu
+    {
+        display: block !important;
+        width:20%;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .reslink:hover + .resmenulist{
+        background: #85454e;
+        color: white;
+        font-family: AMehdiHeydari;
+        display: block !important;
+    }
+    ul{list-style-type: none}
+    ul li
+    {
+        white-space: pre;
+    }
+    .resmenulist hr
+    {
+        width: 100%;
+        height: 1px;
+        background: white;
+    }
+}
+@media only screen and (max-width: 480px){
+    .btmdiv{width: 100% !important;
+        height: 120px;}
+    .btmdiv img
+    {
+        width: 100% !important;
+        height: inherit;
+    }
+    .uppertext{
+        top: 140px;
+
+    }
+    .botbut
+    {
+        font-size: 3vw;
+    }
+    .txt3
+    {
+        bottom: 5px !important;
+    }
+    .topheaderres
+    {
+        width: 100%;
+    }
+    .clothes{width: 150px}
+}
+.labels{
+    width: 72px;
+}
